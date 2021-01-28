@@ -12,9 +12,14 @@ export const QuizContainer = styled.div`
   max-width: 350px;
   padding-top: 45px;
   margin: auto 10%;
+  border-color: 5px solid #fff41F;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
+  }
+  .tuLaX > *:first-child {
+    margin-top: 0;
+    color: #fff41F;
   }
 `;
 
@@ -34,9 +39,10 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>Quiz da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>você sabe tudo de Programação? 
+            <br/>Topa o desafio?</p>
           </Widget.Content>
         </Widget>
         <Footer />

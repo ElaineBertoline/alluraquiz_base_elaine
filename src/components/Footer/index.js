@@ -12,6 +12,9 @@ const FooterWrapper = styled.footer`
     width: 58px;
     margin-right: 23px;
   }
+  p {
+    color: yellow;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -34,9 +37,9 @@ export default function Footer(props) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
+      Desafios propostos na <br/>
         {' '}
-        a
+        
         {' '}
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
