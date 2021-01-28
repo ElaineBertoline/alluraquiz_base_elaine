@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import db from '../db.json';
 import Widget from '../src/components/Widget'
@@ -5,7 +6,7 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-
+import Head from 'next/head';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -26,6 +27,9 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+    <Head>
+      <title> Allura Quiz - Modelo Base</title>
+    </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
